@@ -22,9 +22,9 @@ const userLoginin=asyncWrapper(async(req,res)=>
 
     }
 
-    const isSame=user.compareUserPassword(password)
+    const isSameuser=user.compareUserPassword(password)
 
-    if(!isSame)
+    if(!isSameuser)
     {
         throw  new UnAuthError("Password is incorrect")
 
