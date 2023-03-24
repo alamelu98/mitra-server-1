@@ -21,7 +21,7 @@ const UserLogin=mongoose.Schema({
     },
     phoneNumber:{
         type:Number,
-        required:[true,"Number Required"],
+        required:[true,"Phone Number Required"],
         trim:true
     },
     address:{
