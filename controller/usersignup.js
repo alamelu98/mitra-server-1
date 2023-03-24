@@ -22,7 +22,7 @@ const userLoginin=asyncWrapper(async(req,res)=>
 
     }
 
-    const isSameuser=user.compareUserPassword(password)
+    const isSameuser=await user.compareUserPassword(password)
 
     if(!isSameuser)
     {
